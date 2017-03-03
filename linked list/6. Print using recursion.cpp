@@ -77,7 +77,6 @@ int main()
     Print_recursion_forward(start);
     cout << "Reverse list is ";
     Print_recursion_reverse(start);
-    // print();
     return 0;
 }
 
