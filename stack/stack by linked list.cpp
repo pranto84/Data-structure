@@ -99,6 +99,12 @@ void Swap(int a, int b)
         loc2->data = p;
     }
 }
+void Delete()
+{
+    while(top != NULL){
+        pop();
+    }
+}
 int main()
 {
     top = NULL;
@@ -133,8 +139,12 @@ int main()
     print();
     cout << "Enter the two location for swap";
     cin >> n >> cnt;
-    Swap(n, cnt);
+    Swap(n, cnt); 
     print();
-
+    Delete();   // for full empty;
+    if(isEmpty())
+        cout << "Empty.";
+    else
+        cout << "nope";
     return 0;
 }
